@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <title>Projects - Kenny Aluminium Systems</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" href="assets/images/Kenny Aluminium Systemslogo-Photoroom.png-Photoroom.png" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link href="assets/css/font-awesome-all.css" rel="stylesheet" />
+  <link href="assets/css/flaticon.css" rel="stylesheet" />
+  <link href="assets/css/owl.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+  <link href="assets/css/animate.css" rel="stylesheet" />
+  <link href="assets/css/color.css" rel="stylesheet" />
+  <link href="assets/css/elpath.css" rel="stylesheet" />
+  <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+
+  <!-- Custom gallery + video styling -->
+  <style>
+    .project-gallery .image_block_eight {
+      min-height: 520px;
+      position: relative;
+    }
+    .project-gallery .image-box { height: 100%; }
+    .project-gallery .image {
+      position: absolute;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+      transition: all 0.45s ease;
+      cursor: pointer;
+    }
+    .project-gallery .image:hover {
+      transform: scale(1.05) translateY(-8px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.22);
+      z-index: 3;
+    }
+    .project-gallery .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .project-gallery .image-1 { top: 0; left: 0; width: 70%; height: 80%; z-index: 1; }
+    .project-gallery .image-2 { bottom: 0; right: 0; width: 62%; height: 72%; z-index: 2; }
+    .project-gallery .image-3 { top: 18%; right: 5%; width: 45%; height: 55%; z-index: 3; }
+
+    /* Video styling */
+    .video-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+      transition: all 0.4s ease;
+      position: relative;
+      background: #000;
+    }
+    .video-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.22);
+    }
+    .video-item video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .play-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: rgba(255,255,255,0.8);
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .video-item:hover .play-overlay {
+      color: white;
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    @media (max-width: 991px) {
+      .project-gallery .image_block_eight { min-height: auto; }
+      .project-gallery .image {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boxed_wrapper">
+
+    <!-- Search Popup -->
+    <div id="search-popup" class="search-popup">
+      <div class="popup-inner">
+        <div class="upper-box clearfix">
+          <figure class="logo-box pull-left">
+            <a href="index.html"><img src="assets/images/logo-4.png" alt="" /></a>
+          </figure>
+          <div class="close-search pull-right">
+            <span class="far fa-times"></span>
+          </div>
+        </div>
+        <div class="overlay-layer"></div>
+        <div class="auto-container">
+          <div class="search-form">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <fieldset>
+                  <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required />
+                  <button type="submit"><i class="far fa-search"></i></button>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main header (same as your other pages) -->
+    <header class="main-header">
+      <div class="header-top">
+        <div class="top-inner">
+          <div class="left-column">
+            <ul class="info clearfix">
+              <li><i class="icon-4"></i>+27 63 215 0831 | +27 61 199 5022</li>
+              <li><i class="icon-2"></i>Gauteng</li>
+              <li><i class="icon-3"></i><a href="mailto:kennyaluminiumsystems@gmail.com">kennyaluminiumsystems@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <ul class="social-links clearfix">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-lower">
+        <div class="outer-box">
+          <div class="menu-area clearfix">
+            <div class="logo-box">
+              <figure class="logo">
+                <a href="index.html"><img src="assets/images/Kenny Aluminium Systemslogo.jpg" alt="Kenny Aluminium Systems" height="30%" /></a>
+              </figure>
+            </div>
+            <div class="mobile-nav-toggler">
+              <i class="icon-bar"></i><i class="icon-bar"></i><i class="icon-bar"></i>
+            </div>
+            <nav class="main-menu navbar-expand-md navbar-light">
+              <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li class="dropdown"><a href="index.html">Home</a><ul></ul></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li class="current"><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="nav-right">
+            <div class="support-box">
+              <h6><i class="icon-4"></i>Call: <a href="contact.html">+27632150831<br />+27611995022</a></h6>
+            </div>
+            <div class="search-box-outer search-toggler"><i class="icon-5"></i></div>
+            <div class="btn-box">
+              <a href="contact.html" class="theme-btn btn-one">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky-header">
+        <div class="outer-box">
+          <div class="menu-area clearfix">
+            <div class="logo-box">
+              <figure class="logo">
+                <a href="index.html"><img src="assets/images/Kenny Aluminium Systemslogo.jpg" alt="" /></a>
+              </figure>
+            </div>
+            <nav class="main-menu clearfix"></nav>
+          </div>
+          <div class="nav-right">
+            <div class="support-box">
+              <h6><i class="icon-4"></i>Call: <a href="contact.html">+27 63 215 0831<br />+27 61 199 5022</a></h6>
+            </div>
+            <div class="search-box-outer search-toggler"><i class="icon-5"></i></div>
+            <div class="btn-box">
+              <a href="contact.html" class="theme-btn btn-one">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+      <nav class="menu-box">
+        <div class="nav-logo">
+          <a href="index.html"><img src="assets/images/Kenny Aluminium Systemslogo.jpg" alt="" title="" /></a>
+        </div>
+        <div class="menu-outer"></div>
+        <div class="contact-info">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>Gauteng</li>
+            <li><a href="contact.html">+27 63 215 0831<br />+27 61 199 5022</a></li>
+            <li><a href="mailto:kennyaluminiumsystems@gmail.com">kennyaluminiumsystems<br />@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul class="clearfix">
+            <li><a href="https://twitter.com/ranasarmad88?t=NbtvZ82OxxvOgZ2ndKZV9w&s=09"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://www.facebook.com/rana.sarmad.906?mibextid=ZbWKw"><span class="fab fa-facebook-square"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/engr-rana-sarmad-mahmood-0b87721a5"><span class="fab fa-linkedin-in"></span></a></li>
+            <li><a href="https://instagram.com/shb_rana?igshid=NGExMmI2YTkyZg=="><span class="fab fa-instagram"></span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title centred">
+      <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url(assets/images/projects/project-hero.jpg);"></div>
+      <div class="auto-container">
+        <div class="content-box">
+          <h2>Our Projects</h2>
+          <ul class="bread-crumb clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li>Projects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Intro -->
+    <section class="projects-intro sec-pad pt_70 pb_40">
+      <div class="auto-container">
+        <div class="sec-title centred mb_50">
+          <h5 class="d_block fs_17 lh_25 fw_medium mb_9">Portfolio</h5>
+          <h2 class="d_block fs_44 lh_54 fw_bold mb_20">Transforming Spaces with Aluminium Excellence</h2>
+          <p class="fs_18" style="max-width: 780px; margin: 0 auto; text-align: center;">
+            Explore our finest residential, commercial and custom aluminium & glass installations across Gauteng. 
+            Each project showcases precision craftsmanship, modern design and lasting quality — from sleek sliding doors to striking shopfronts and elegant frameless solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Images) -->
+    <section class="project-gallery sec-pad pt_0">
+      <div class="auto-container">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-12 col-sm-12 image-column mb_60">
+            <div class="image_block_eight">
+              <div data-animation-box class="image-box p_relative d_block">
+                <div class="shape">
+                  <div class="shape-1" style="background-image: url(assets/images/shape/shape-27.png);"></div>
+                  <div class="shape-2" style="background-image: url(assets/images/shape/shape-27.png);"></div>
+                </div>
+
+                <figure class="image image-1" data-fancybox="gallery" data-caption="Modern Sliding Doors – Faerie Glen">
+                  <img src="assets/images/IMG-20260127-WA0026(1).jpg" alt="Modern Sliding Doors – Faerie Glen" />
+                </figure>
+
+                <figure class="image image-2" data-fancybox="gallery" data-caption="Custom Aluminium Shopfront">
+                  <img src="assets/images/IMG-20260127-WA0002.jpg" alt="Custom Aluminium Shopfront" />
+                </figure>
+
+                <figure class="image image-3" data-fancybox="gallery" data-caption="Premium Window Installation">
+                  <img src="assets/images/IMG-20260127-WA0023.jpg" alt="Premium Window Installation" />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12 image-column mb_60">
+            <div class="image_block_eight">
+              <div data-animation-box class="image-box p_relative d_block">
+                <div class="shape">
+                  <div class="shape-1" style="background-image: url(assets/images/shape/shape-27.png);"></div>
+                  <div class="shape-2" style="background-image: url(assets/images/shape/shape-27.png);"></div>
+                </div>
+
+                <figure class="image image-1" data-fancybox="gallery" data-caption="Frameless Glass & Aluminium">
+                  <img src="assets/images/IMG-20260127-WA0001.jpg" alt="Frameless Glass & Aluminium" />
+                </figure>
+
+                <figure class="image image-2" data-fancybox="gallery" data-caption="Contemporary Door Design">
+                  <img src="assets/images/IMG-20260127-WA0018.jpg" alt="Contemporary Door Design" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Showcase Section – FIXED & WORKING -->
+    <section class="project-videos sec-pad bg-color-2">
+      <div class="auto-container">
+        <div class="sec-title centred mb_50">
+          <h5 class="d_block fs_17 lh_25 fw_medium mb_9">In Action</h5>
+          <h2 class="d_block fs_44 lh_54 fw_bold">See Our Craftsmanship</h2>
+        </div>
+
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-12 col-sm-12 video-column mb_50">
+            <div class="video-item">
+              <video poster="assets/images/poster-1.jpg" controls preload="metadata">
+                <source src="assets/images/VID-20260127-WA0020.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-overlay centred"><i class="fas fa-play fs_50"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12 video-column mb_50">
+            <div class="video-item">
+              <video poster="assets/images/VID-20260127-WA0021.mp4" controls preload="metadata">
+                <source src="assets/images/VID-20260127-WA0021.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-overlay centred"><i class="fas fa-play fs_50"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-text centred mt_30">
+          <p class="fs_18">Watch how we bring precision and elegance to every installation — from concept to completion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe-section -->
+    <section class="subscribe-section p_relative">
+      <div class="auto-container">
+        <div class="inner-container">
+          <div class="row align-items-center clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+              <div class="text p_relative d_block">
+                <h2>Subscribe to Our Newsletter</h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+              <div class="form-inner p_relative d_block">
+                <form action="index.html" method="post">
+                  <div class="form-group">
+                    <input type="email" name="email" placeholder="Your email address" required="" />
+                    <button type="submit" disabled style="cursor: not-allowed">
+                      Subscribe Now<i class="icon-7"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main-footer -->
+    <footer class="main-footer p_relative bg-color-2">
+      <div class="icon-layer">
+        <img src="assets/images/Kenny-main-back.png" alt="" />
+      </div>
+      <div class="footer-top p_relative d_block">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+              <div class="footer-widget logo-widget">
+                <figure class="footer-logo">
+                  <a href="index.html"><img src="assets/images/Kenny Aluminium Systemsfooter.png" alt="" /></a>
+                </figure>
+                <div class="text">
+                  <p style="text-align: justify">
+                    Kenny Aluminium Systems is a manufacturer and installer of architectural aluminium windows, doors and other aluminium products.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+              <div class="footer-widget links-widget ml_100">
+                <div class="widget-title"><h3>Links</h3></div>
+                <div class="widget-content">
+                  <ul class="links-list clearfix">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+              <div class="footer-widget contact-widget">
+                <div class="widget-title"><h3>Get In Touch</h3></div>
+                <div class="widget-content">
+                  <ul class="info-list clearfix">
+                    <li>Gauteng</li>
+                    <li><a href="contact.html">+27 63 215 0831<br />+27 61 199 5022</a></li>
+                    <li><a href="mailto:kennyaluminiumsystems@gmail.com">kennyaluminiumsystems@gmail.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom p_relative">
+        <div class="auto-container">
+          <div class="bottom-inner p_relative">
+            <div class="copyright">
+              <p>
+                © 2024 <a href="#">Kenny Aluminium Systems.</a> All Rights Reserved. Designed by
+                <a href="https://www.ecstaticweb.co.za/"><b>Ecstatic Web</b></a><br>
+                لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ ٱلْعَلِيِّ ٱلْعَظِيمِ
+              </p>
+            </div>
+            <ul class="footer-nav">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <div class="scroll-to-top">
+      <div>
+        <div class="scroll-top-inner">
+          <div class="scroll-bar"><div class="bar-inner"></div></div>
+          <div class="scroll-bar-text">Go To Top</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/jquery.fancybox.js"></script>
+  <script src="assets/js/appear.js"></script>
+  <script src="assets/js/scrollbar.js"></script>
+  <script src="assets/js/isotope.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/parallax-scroll.js"></script>
+  <script defer src="assets/js/script.js"></script>
+
+  <!-- Optional: Auto-hide play icon when video starts -->
+  <script>
+    document.querySelectorAll('.video-item video').forEach(video => {
+      video.addEventListener('play', function() {
+        this.parentElement.querySelector('.play-overlay').style.opacity = '0';
+      });
+      video.addEventListener('pause', function() {
+        this.parentElement.querySelector('.play-overlay').style.opacity = '0.8';
+      });
+    });
+  </script>
+</body>
+</html>
